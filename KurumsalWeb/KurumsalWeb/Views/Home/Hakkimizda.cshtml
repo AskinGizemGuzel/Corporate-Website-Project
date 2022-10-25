@@ -1,0 +1,33 @@
+﻿@model KurumsalWeb.Models.Model.Hakkimizda
+@{
+    ViewBag.Title = "Hakkımızda";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<html>
+<head>
+    <style>
+        body{
+           
+            background-image: url('../../Content/SiteLayout/img/dummies/arkaplan.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body >
+
+</body>
+</html>
+<div class="container">
+    <div class="col-md-12">
+        <h3>Kurumsal</h3>
+        <h4 style="align-items">Bizi Yakından Tanıyın!</h4>
+     
+        @*<img src="~/Content/SiteLayout/img/dummies/blog/hakkımızda.png" />"" alt="" class="align-center img-box img-responsive" />*@
+        <p>
+            @Html.Raw(Model.Aciklama)
+        </p>
+    </div>
+</div>
+
